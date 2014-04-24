@@ -64,6 +64,13 @@ This syntax works particularly well in CoffeeScript and is literally 2-3 extra c
 
 Using the powers of [`esprima`](https://github.com/ariya/esprima) all function calls to `ng` are replaced with array injector notation and the list of dependencies is generated using function arguments. Because actual AST is used, there are no misses.
 
+## Build Plugins
+
+`angular-injector` is available for the following build systems:
+
+* [`gulp-angular-injector`](https://github.com/alexgorbatchev/gulp-angular-injector)
+* [`grunt-angular-injector`](https://github.com/alexgorbatchev/grunt-angular-injector)
+
 ## Testing
 
     npm test
