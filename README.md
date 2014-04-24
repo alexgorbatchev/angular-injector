@@ -47,6 +47,12 @@ This syntax works particularly well in CoffeeScript and is literally 2-3 extra c
     someModule.factory 'greeter', ng ($window) ->
       # ...
 
+## API
+
+### angularInjector.annotate(opts)
+
+`opts.token` is a `String`, default value `ng`. Change it to any other token which suits your style best.
+
 ## How does it work?
 
 Using the powers of [`esprima`](https://github.com/ariya/esprima) all function calls to `ng` are replaced with array injector notation and the list of dependencies is generated using function arguments. Because actual AST is used, there are no misses.
