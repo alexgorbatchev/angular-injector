@@ -1,8 +1,13 @@
 {
   "name": "angular-injector",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "This module is meant to solve an annoying problem of minification and dependency injection in Angular.js.",
-  "keywords": ["angular", "angularjs", "minification", "di"],
+  "keywords": [
+    "angular",
+    "angularjs",
+    "minification",
+    "di"
+  ],
   "homepage": "https://github.com/alexgorbatchev/angular-injector",
   "bugs": "https://github.com/alexgorbatchev/angular-injector/issues",
   "bin": {
