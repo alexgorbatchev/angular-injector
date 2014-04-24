@@ -1,6 +1,6 @@
 {
   "name": "angular-injector",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "This module is meant to solve an annoying problem of minification and dependency injection in Angular.js.",
   "keywords": [
     "angular",
