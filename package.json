@@ -1,0 +1,44 @@
+{
+  "name": "angular-injector",
+  "version": "0.5.0",
+  "description": "This module is meant to solve an annoying problem of minification and dependency injection in Angular.js.",
+  "keywords": ["angular", "angularjs", "minification", "di"],
+  "homepage": "https://github.com/alexgorbatchev/angular-injector",
+  "bugs": "https://github.com/alexgorbatchev/angular-injector/issues",
+  "bin": {
+    "angular-injector": "bin/angular-injector.js"
+  },
+  "author": {
+    "name": "Alex Gorbatchev",
+    "email": "",
+    "url": "https://github.com/alexgorbatchev"
+  },
+  "main": "./lib/angular-injector.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexgorbatchev/angular-injector.git"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test/*.spec.coffee",
+    "pretest": "./node_modules/.bin/coffee --bare --output ./lib --compile ./src/*.coffee"
+  },
+  "dependencies": {
+    "falafel": "^0.3.1",
+    "cssauron-falafel": "^1.2.1",
+    "event-stream": "^3.1.2",
+    "commander": "^2.2.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "coffee-errors": "^0.8.5",
+    "sinon": "^1.9.1",
+    "sinon-chai": "^2.5.0",
+    "mocha": "^1.18.2",
+    "chai": "^1.9.1"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=1.2.10"
+  },
+  "license": "MIT"
+}
