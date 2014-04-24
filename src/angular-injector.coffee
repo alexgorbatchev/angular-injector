@@ -1,5 +1,5 @@
 module.exports =
-  annotate: (src, opts) ->
+  annotate: (src, opts = {}) ->
     falafel = require 'falafel'
     css     = require 'cssauron-falafel'
 
