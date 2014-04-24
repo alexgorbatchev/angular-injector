@@ -30,7 +30,6 @@
   "dependencies": {
     "falafel": "^0.3.1",
     "cssauron-falafel": "^1.2.1",
-    "event-stream": "^3.1.2",
     "commander": "^2.2.0"
   },
   "devDependencies": {
