@@ -18,6 +18,8 @@ suite = (token = 'ng') ->
         function #{token}($scope, foo) {}
         var #{token}1 = #{token}.toString();
 
+        __#{token}__(1, 2);
+
         var controller = #{token}(function($scope, foo, bar) {
           console.log(foo, bar);
         });
@@ -32,6 +34,8 @@ suite = (token = 'ng') ->
         #{token} = function($scope, foo) {}
         function #{token}($scope, foo) {}
         var #{token}1 = #{token}.toString();
+
+        __#{token}__(1, 2);
 
         var controller = ['$scope', 'foo', 'bar', function($scope, foo, bar) {
           console.log(foo, bar);

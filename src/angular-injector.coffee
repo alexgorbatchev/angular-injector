@@ -3,9 +3,11 @@ module.exports =
     falafel = require 'falafel'
     css     = require 'cssauron-falafel'
 
-    isInjector = css "call > id:contains(#{opts.token or 'ng'})"
-    found      = false
-    chunks     = src.split ''
+    opts.token     ?= 'ng'
+    isFunctionCall = css 'call > id'
+    found          = false
+    chunks         = src.split ''
+    isInjector     = (node) -> node.name is opts.token and isFunctionCall node
 
     source = (node) ->
       [start, end] = node.range
