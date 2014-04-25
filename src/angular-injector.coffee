@@ -19,6 +19,7 @@ module.exports =
       chunks[i] = '' for i in [start + 1...end]
 
     wrap = (node) ->
+      return source node unless node.params?.length
       params = (param for param in node.params).map ({name}) -> "'#{name}'"
       "[#{params.join ', '}, #{source node}]"
 

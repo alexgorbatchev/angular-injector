@@ -27,6 +27,10 @@ suite = (token = 'ng') ->
         app.service('foo', #{token}(function controller($scope, foo, bar) {
           console.log(foo, bar);
         }));
+
+        app.service('bar', #{token}(function() {
+          console.log('no arguments...');
+        }));
       """, {token}
 
     it 'produces valid results', ->
@@ -44,6 +48,10 @@ suite = (token = 'ng') ->
         app.service('foo', ['$scope', 'foo', 'bar', function controller($scope, foo, bar) {
           console.log(foo, bar);
         }]);
+
+        app.service('bar', function() {
+          console.log('no arguments...');
+        });
       """
 
 describe 'angular-injector', ->
