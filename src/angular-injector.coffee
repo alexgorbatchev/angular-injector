@@ -9,7 +9,7 @@ module.exports =
     isInjector     = (node) -> node.name is opts.token and isFunctionCall node
 
     wrap = (node) ->
-      return source node unless node.params?.length
+      return node.source() unless node.params?.length
       params = (param for param in node.params).map ({name}) -> "'#{name}'"
       "[#{params.join ', '}, #{node.source()}]"
 
