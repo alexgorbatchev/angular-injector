@@ -1,10 +1,11 @@
 # angular-injector
 
-[![Dependency status](https://david-dm.org/alexgorbatchev/angular-injector.png)](https://david-dm.org/alexgorbatchev/angular-injector)
-[![devDependency Status](https://david-dm.org/alexgorbatchev/angular-injector/dev-status.png)](https://david-dm.org/alexgorbatchev/angular-injector#info=devDependencies)
-[![Build Status](https://secure.travis-ci.org/alexgorbatchev/angular-injector.png?branch=master)](https://travis-ci.org/alexgorbatchev/angular-injector)
+[![GitTip](http://img.shields.io/gittip/alexgorbatchev.svg)](https://www.gittip.com/alexgorbatchev/)
+[![Dependency status](https://david-dm.org/alexgorbatchev/angular-injector.svg)](https://david-dm.org/alexgorbatchev/angular-injector)
+[![devDependency Status](https://david-dm.org/alexgorbatchev/angular-injector/dev-status.svg)](https://david-dm.org/alexgorbatchev/angular-injector#info=devDependencies)
+[![Build Status](https://secure.travis-ci.org/alexgorbatchev/angular-injector.svg?branch=master)](https://travis-ci.org/alexgorbatchev/angular-injector)
 
-[![NPM](https://nodei.co/npm/angular-injector.png?downloads=true)](https://npmjs.org/package/angular-injector)
+[![NPM](https://nodei.co/npm/angular-injector.svg)](https://npmjs.org/package/angular-injector)
 
 This module is meant to solve an annoying problem of minification and dependency injection in [`angular.js`](https://www.angularjs.org). `angular-injector` works better and more reliably than [`ngmin`](https://www.npmjs.org/package/ngmin) because it works with any syntax and every possible declaration regardless of where and how it happens.
 
