@@ -54,24 +54,23 @@ suite = (token = 'ng') ->
         });
       """
 
-  describe "using nested injections", ->
+    describe 'using nested injections', ->
+      it 'annotates both injections', ->
+        nested = injector.annotate """
+          var controller = #{token}(function($rootScope, foo){
+            foo.inject(#{token}(function($scope, bar){
+              console.log(foo, bar);
+            }));
+          });
+        """, {token}
 
-    it 'annotates both injections', ->
-      nested = injector.annotate """
-        var controller = #{token}(function($rootScope, foo){
-          foo.inject(#{token}(function($scope, bar){
-            console.log(foo, bar);
-          }));
-        });
-      """, {token}
-
-      expect(nested).to.equal """
-        var controller = ['$rootScope', 'foo', function($rootScope, foo){
-          foo.inject(['$scope', 'bar', function($scope, bar){
-            console.log(foo, bar);
-          }]);
-        }];
-      """
+        expect(nested).to.equal """
+          var controller = ['$rootScope', 'foo', function($rootScope, foo){
+            foo.inject(['$scope', 'bar', function($scope, bar){
+              console.log(foo, bar);
+            }]);
+          }];
+        """
 
 describe 'angular-injector', ->
   suite()
