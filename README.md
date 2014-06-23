@@ -27,7 +27,7 @@ This module does that automatically.
 
 Please help me spend more time developing and maintaining awesome modules like this by donating! Just setup [Gittip](http://gittip.com) if you haven't already and if you donate $1/week I can buy a coffee on your behalf to keep me coding.
 
-[![Gittip](http://img.shields.io/gittip/alexgorbatchev.png)](https://www.gittip.com/alexgorbatchev/)
+[![Gittip](http://img.shields.io/gittip/alexgorbatchev.svg)](https://www.gittip.com/alexgorbatchev/)
 [![PayPayl donate button](http://img.shields.io/paypal/donate.png?color=yellow)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PSDPM9268P8RW "Donate once-off to this project using Paypal")
 
 ## Installation
