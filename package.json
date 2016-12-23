@@ -28,7 +28,7 @@
     "pretest": "./node_modules/.bin/coffee --bare --output ./lib --compile ./src/*.coffee"
   },
   "dependencies": {
-    "falafel": "^0.3.1",
+    "falafel": "^2.0.0",
     "cssauron-falafel": "^1.2.1",
     "commander": "^2.2.0"
   },
@@ -37,8 +37,8 @@
     "coffee-errors": "^0.8.5",
     "sinon": "^1.9.1",
     "sinon-chai": "^2.5.0",
-    "mocha": "^1.18.2",
-    "chai": "^1.9.1"
+    "mocha": "^3.2.0",
+    "chai": "^3.5.0"
   },
   "engines": {
     "node": ">=0.10.0",
